@@ -57,7 +57,7 @@ class OutputHandlerROS : public console_bridge::OutputHandler
 {
 public:
   OutputHandlerROS(void);
-  virtual void log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line);
+  virtual ROSCONSOLE_BRIDGE_DECL void log(const std::string &text, console_bridge::LogLevel level, const char *filename, int line);
 };
 
 struct ROSCONSOLE_BRIDGE_DECL RegisterOutputHandlerProxy
